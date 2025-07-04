@@ -37,7 +37,7 @@ Edit
    bash
    Copy
    Edit
-   git clone https://github.com/lukermatthew/BarBooks.git
+   git clone https://github.com/lukermatthew/BarBooks-api.git
    cd BarBooks
 
 2. Install dependencies:
