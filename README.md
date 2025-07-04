@@ -66,9 +66,13 @@ bash
 Copy
 Edit
 npx tsc
-node dist/server.js
-Server will be available at:
-👉 http://localhost:3000
+npm run dev
+🚀 Server running on http://localhost:3000
+
+Endpoint Full URL
+GET summary http://localhost:3000/api/summary
+GET orders http://localhost:3000/api/orders
+POST new order http://localhost:3000/api/orders
 
 🧪 Running Tests
 bash
@@ -81,6 +85,11 @@ JavaScript Seed Script
 npx ts-node db/seed.ts
 
 npm run seed
+
+sqlite3 data.db
+.tables
+SELECT \* FROM orders;
+.quit
 
 👨‍💻 Author
 Luker Matthew Tan
