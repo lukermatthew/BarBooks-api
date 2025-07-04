@@ -1,4 +1,5 @@
-📦 Order Summary API
+# 📦 BarBooks API
+
 A simple backend service for managing orders and generating summary statistics including total revenue, median order price, most sold product, and unique product count.
 
 🔧 Tech Stack
@@ -9,27 +10,6 @@ Database: SQLite (via better-sqlite3)
 Testing: Jest
 
 Configuration: .env file for environment variables
-
-📁 Project Structure
-bash
-Copy
-Edit
-.
-├── src/
-│ ├── server.ts # Main Express server
-│ └── summarizeOrders.ts # Business logic to summarize orders
-│
-├── db/
-│ ├── schema.sql # Database schema
-│ └── seed.ts # Seed script for mock data
-│
-├── test/
-│ └── summarizeOrders.test.ts # Unit tests for summarizeOrders
-│
-├── .env # Environment variables
-├── jest.config.js # Jest configuration
-├── package.json
-└── README.md
 
 📦 Installation
 
@@ -90,7 +70,3 @@ sqlite3 data.db
 .tables
 SELECT \* FROM orders;
 .quit
-
-👨‍💻 Author
-Luker Matthew Tan
-MIT License · GitHub
