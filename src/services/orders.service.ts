@@ -5,10 +5,13 @@ export function getAllOrders(product: string, limit: number, offset: number): Or
   const stmt = db.prepare(`
     SELECT * FROM orders
     WHERE product LIKE ?
+    ORDER BY id DESC
     LIMIT ? OFFSET ?
   `);
   return stmt.all(`%${product}%`, limit, offset) as Order[];
 }
+
+
 
 export function insertOrder(product: string, qty: number, price: number): Order {
   const stmt = db.prepare('INSERT INTO orders (product, qty, price) VALUES (?, ?, ?)');
