@@ -77,6 +77,11 @@ Edit
 npx jest
 Make sure ts-jest is installed and configured.
 
+JavaScript Seed Script
+npx ts-node db/seed.ts
+
+npm run seed
+
 👨‍💻 Author
 Luker Matthew Tan
 MIT License · GitHub
